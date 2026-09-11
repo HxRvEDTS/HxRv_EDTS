@@ -10,6 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Changing Background -->
+  <div class="bg-slideshow">
+    <div class="bg-slide active" style="background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2070')"></div>
+    <div class="bg-slide" style="background-image: url('https://images.unsplash.com/photo-1536440136627-eb06862849c2?q=80&w=2070')"></div>
+  </div>
+  <div class="bg-overlay"></div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
@@ -50,142 +64,21 @@
 
       <div class="edits-grid">
         <article class="edit-card">
-          <div class="edit-thumb">
-            <div class="placeholder-thumb">01</div>
-          </div>
+          <div class="edit-thumb"><div class="placeholder-thumb">01</div></div>
           <div class="edit-info">
             <h3>Cinematic Short</h3>
             <p>Moody color grade + tight pacing</p>
             <span class="tag">Cinematic</span>
           </div>
         </article>
-
         <article class="edit-card">
-          <div class="edit-thumb">
-            <div class="placeholder-thumb">02</div>
-          </div>
+          <div class="edit-thumb"><div class="placeholder-thumb">02</div></div>
           <div class="edit-info">
             <h3>Social Cut</h3>
             <p>Fast, punchy, made for reels</p>
             <span class="tag">Social</span>
           </div>
         </article>
-
         <article class="edit-card">
-          <div class="edit-thumb">
-            <div class="placeholder-thumb">03</div>
-          </div>
-          <div class="edit-info">
-            <h3>Music Video</h3>
-            <p>Rhythm-driven editing</p>
-            <span class="tag">Music</span>
-          </div>
-        </article>
-
-        <article class="edit-card">
-          <div class="edit-thumb">
-            <div class="placeholder-thumb">04</div>
-          </div>
-          <div class="edit-info">
-            <h3>Brand Piece</h3>
-            <p>Clean commercial storytelling</p>
-            <span class="tag">Commercial</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Coaching -->
-  <section id="coaching" class="section coaching">
-    <div class="container">
-      <div class="section-header">
-        <h2>Editing Coaching</h2>
-        <p>Direct feedback. Clear direction. Real improvement.</p>
-      </div>
-
-      <div class="coaching-grid">
-        <div class="coach-card">
-          <div class="coach-number">01</div>
-          <h3>1-on-1 Sessions</h3>
-          <p>We go through your projects together. I show you exactly what to fix and why.</p>
-        </div>
-        <div class="coach-card">
-          <div class="coach-number">02</div>
-          <h3>Workflow & Speed</h3>
-          <p>Build a cleaner, faster process in Premiere, DaVinci or CapCut.</p>
-        </div>
-        <div class="coach-card">
-          <div class="coach-number">03</div>
-          <h3>Portfolio Review</h3>
-          <p>Honest notes on your reel + advice on what will actually get you clients.</p>
-        </div>
-      </div>
-
-      <div class="coach-cta">
-        <a href="#contact" class="btn btn-primary">Start Coaching</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Let’s work</h2>
-        <p>Projects or coaching — just reach out.</p>
-      </div>
-
-      <div class="contact-grid">
-        <a href="mailto:youremail@example.com" class="contact-item">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">youremail@example.com</span>
-        </a>
-
-        <a href="tel:+1234567890" class="contact-item">
-          <span class="contact-label">Phone</span>
-          <span class="contact-value">+1 (234) 567-890</span>
-        </a>
-
-        <a href="https://instagram.com/yourhandle" target="_blank" class="contact-item">
-          <span class="contact-label">Instagram</span>
-          <span class="contact-value">@yourhandle</span>
-        </a>
-
-        <a href="https://tiktok.com/@yourhandle" target="_blank" class="contact-item">
-          <span class="contact-label">TikTok</span>
-          <span class="contact-value">@yourhandle</span>
-        </a>
-
-        <a href="https://youtube.com/@yourhandle" target="_blank" class="contact-item">
-          <span class="contact-label">YouTube</span>
-          <span class="contact-value">@yourhandle</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 HxRv. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      toggle.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        toggle.classList.remove('active');
-      });
-    });
-  </script>
-</body>
-</html>
+          <div class="edit-thumb"><div class="placeholder-thumb">03</div></div>
+          <div
