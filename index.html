@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Editor & Coach</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">YourName</a>
+      <ul class="nav-links">
+        <li><a href="#edits">Edits</a></li>
+        <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Editor & Coach</h1>
+      <p class="tagline">Clean cuts. Strong storytelling. Clear feedback.</p>
+      <a href="#edits" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Edits / Portfolio -->
+  <section id="edits" class="section">
+    <div class="container">
+      <h2>Recent Edits</h2>
+      <p class="section-intro">A selection of projects I’ve worked on. Click any card to expand (you can replace these with real links later).</p>
+      
+      <div class="edits-grid">
+        <!-- Edit Card 1 -->
+        <article class="edit-card">
+          <div class="edit-thumb">
+            <!-- Replace the placeholder with an actual image -->
+            <div class="placeholder-thumb">Edit 01</div>
+          </div>
+          <div class="edit-info">
+            <h3>Project Title</h3>
+            <p>Short description of the edit style or client.</p>
+            <span class="tag">Cinematic</span>
+          </div>
+        </article>
+
+        <!-- Edit Card 2 -->
+        <article class="edit-card">
+          <div class="edit-thumb">
+            <div class="placeholder-thumb">Edit 02</div>
+          </div>
+          <div class="edit-info">
+            <h3>Project Title</h3>
+            <p>Short description of the edit style or client.</p>
+            <span class="tag">Social</span>
+          </div>
+        </article>
+
+        <!-- Edit Card 3 -->
+        <article class="edit-card">
+          <div class="edit-thumb">
+            <div class="placeholder-thumb">Edit 03</div>
+          </div>
+          <div class="edit-info">
+            <h3>Project Title</h3>
+            <p>Short description of the edit style or client.</p>
+            <span class="tag">Music</span>
+          </div>
+        </article>
+
+        <!-- Edit Card 4 -->
+        <article class="edit-card">
+          <div class="edit-thumb">
+            <div class="placeholder-thumb">Edit 04</div>
+          </div>
+          <div class="edit-info">
+            <h3>Project Title</h3>
+            <p>Short description of the edit style or client.</p>
+            <span class="tag">Commercial</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaching -->
+  <section id="coaching" class="section coaching">
+    <div class="container">
+      <h2>Editing Coaching</h2>
+      <p class="section-intro">I help editors improve their storytelling, pacing, colour, and workflow — whether you’re just starting or levelling up.</p>
+
+      <div class="coaching-grid">
+        <div class="coach-card">
+          <h3>1-on-1 Sessions</h3>
+          <p>Personalised feedback on your projects. We break down what’s working and what needs tightening.</p>
+        </div>
+        <div class="coach-card">
+          <h3>Workflow & Tools</h3>
+          <p>Premiere, DaVinci, After Effects, or CapCut — I help you build a faster, cleaner process.</p>
+        </div>
+        <div class="coach-card">
+          <h3>Portfolio Review</h3>
+          <p>Get honest notes on your reel and advice on how to make it stand out to clients.</p>
+        </div>
+      </div>
+
+      <div class="coach-cta">
+        <p>Ready to level up?</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section-intro">Let’s talk about a project or coaching.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:youremail@example.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">youremail@example.com</span>
+        </a>
+
+        <a href="tel:+1234567890" class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+1 (234) 567-890</span>
+        </a>
+
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@yourhandle</span>
+        </a>
+
+        <a href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">TikTok</span>
+          <span class="contact-value">@yourhandle</span>
+        </a>
+
+        <a href="https://youtube.com/@yourhandle" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">YouTube</span>
+          <span class="contact-value">@yourhandle</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        toggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
