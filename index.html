@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HxRv_EDTS | Editor & Coach</title>
+  <title>HxRv | Editor & Coach</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#home" class="logo">HxRv_EDTS</a>
+      <a href="#home" class="logo">HxRv</a>
       <ul class="nav-links">
         <li><a href="#edits">Edits</a></li>
         <li><a href="#coaching">Coaching</a></li>
@@ -30,64 +30,65 @@
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Editor & Coach</h1>
-      <p class="tagline">Clean cuts. Strong storytelling. Clear feedback.</p>
-      <a href="#edits" class="btn">View My Work</a>
+      <p class="hero-label">Video Editor · Coach</p>
+      <h1>Clean cuts.<br>Strong stories.</h1>
+      <p class="tagline">I help creators turn raw footage into something people actually feel.</p>
+      <div class="hero-buttons">
+        <a href="#edits" class="btn btn-primary">View My Work</a>
+        <a href="#coaching" class="btn btn-secondary">Get Coaching</a>
+      </div>
     </div>
   </section>
 
-  <!-- Edits / Portfolio -->
+  <!-- Edits -->
   <section id="edits" class="section">
     <div class="container">
-      <h2>Recent Edits</h2>
-      <p class="section-intro">A selection of projects I’ve worked on. Click any card to expand (you can replace these with real links later).</p>
-      
+      <div class="section-header">
+        <h2>Selected Edits</h2>
+        <p>A few recent projects. More coming soon.</p>
+      </div>
+
       <div class="edits-grid">
-        <!-- Edit Card 1 -->
         <article class="edit-card">
           <div class="edit-thumb">
-            <!-- Replace the placeholder with an actual image -->
-            <div class="placeholder-thumb">Edit 01</div>
+            <div class="placeholder-thumb">01</div>
           </div>
           <div class="edit-info">
-            <h3>Project Title</h3>
-            <p>Short description of the edit style or client.</p>
+            <h3>Cinematic Short</h3>
+            <p>Moody color grade + tight pacing</p>
             <span class="tag">Cinematic</span>
           </div>
         </article>
 
-        <!-- Edit Card 2 -->
         <article class="edit-card">
           <div class="edit-thumb">
-            <div class="placeholder-thumb">Edit 02</div>
+            <div class="placeholder-thumb">02</div>
           </div>
           <div class="edit-info">
-            <h3>Project Title</h3>
-            <p>Short description of the edit style or client.</p>
+            <h3>Social Cut</h3>
+            <p>Fast, punchy, made for reels</p>
             <span class="tag">Social</span>
           </div>
         </article>
 
-        <!-- Edit Card 3 -->
         <article class="edit-card">
           <div class="edit-thumb">
-            <div class="placeholder-thumb">Edit 03</div>
+            <div class="placeholder-thumb">03</div>
           </div>
           <div class="edit-info">
-            <h3>Project Title</h3>
-            <p>Short description of the edit style or client.</p>
+            <h3>Music Video</h3>
+            <p>Rhythm-driven editing</p>
             <span class="tag">Music</span>
           </div>
         </article>
 
-        <!-- Edit Card 4 -->
         <article class="edit-card">
           <div class="edit-thumb">
-            <div class="placeholder-thumb">Edit 04</div>
+            <div class="placeholder-thumb">04</div>
           </div>
           <div class="edit-info">
-            <h3>Project Title</h3>
-            <p>Short description of the edit style or client.</p>
+            <h3>Brand Piece</h3>
+            <p>Clean commercial storytelling</p>
             <span class="tag">Commercial</span>
           </div>
         </article>
@@ -98,27 +99,31 @@
   <!-- Coaching -->
   <section id="coaching" class="section coaching">
     <div class="container">
-      <h2>Editing Coaching</h2>
-      <p class="section-intro">I help editors improve their storytelling, pacing, colour, and workflow — whether you’re just starting or levelling up.</p>
+      <div class="section-header">
+        <h2>Editing Coaching</h2>
+        <p>Direct feedback. Clear direction. Real improvement.</p>
+      </div>
 
       <div class="coaching-grid">
         <div class="coach-card">
+          <div class="coach-number">01</div>
           <h3>1-on-1 Sessions</h3>
-          <p>Personalised feedback on your projects. We break down what’s working and what needs tightening.</p>
+          <p>We go through your projects together. I show you exactly what to fix and why.</p>
         </div>
         <div class="coach-card">
-          <h3>Workflow & Tools</h3>
-          <p>Premiere, DaVinci, After Effects, or CapCut — I help you build a faster, cleaner process.</p>
+          <div class="coach-number">02</div>
+          <h3>Workflow & Speed</h3>
+          <p>Build a cleaner, faster process in Premiere, DaVinci or CapCut.</p>
         </div>
         <div class="coach-card">
+          <div class="coach-number">03</div>
           <h3>Portfolio Review</h3>
-          <p>Get honest notes on your reel and advice on how to make it stand out to clients.</p>
+          <p>Honest notes on your reel + advice on what will actually get you clients.</p>
         </div>
       </div>
 
       <div class="coach-cta">
-        <p>Ready to level up?</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="#contact" class="btn btn-primary">Start Coaching</a>
       </div>
     </div>
   </section>
@@ -126,8 +131,10 @@
   <!-- Contact -->
   <section id="contact" class="section contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p class="section-intro">Let’s talk about a project or coaching.</p>
+      <div class="section-header">
+        <h2>Let’s work</h2>
+        <p>Projects or coaching — just reach out.</p>
+      </div>
 
       <div class="contact-grid">
         <a href="mailto:youremail@example.com" class="contact-item">
@@ -140,17 +147,17 @@
           <span class="contact-value">+1 (234) 567-890</span>
         </a>
 
-        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://instagram.com/yourhandle" target="_blank" class="contact-item">
           <span class="contact-label">Instagram</span>
           <span class="contact-value">@yourhandle</span>
         </a>
 
-        <a href="https://tiktok.com/@yourhandle" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://tiktok.com/@yourhandle" target="_blank" class="contact-item">
           <span class="contact-label">TikTok</span>
           <span class="contact-value">@yourhandle</span>
         </a>
 
-        <a href="https://youtube.com/@yourhandle" target="_blank" rel="noopener" class="contact-item">
+        <a href="https://youtube.com/@yourhandle" target="_blank" class="contact-item">
           <span class="contact-label">YouTube</span>
           <span class="contact-value">@yourhandle</span>
         </a>
@@ -160,12 +167,11 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Your Name. All rights reserved.</p>
+      <p>© 2026 HxRv. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Simple mobile menu toggle
     const toggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
@@ -174,7 +180,6 @@
       toggle.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
